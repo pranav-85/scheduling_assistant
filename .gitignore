@@ -1,0 +1,33 @@
+# Node.js specific
+node_modules/
+npm-debug.log
+.env # Or any other environment variable files
+build/
+dist/
+tmp/
+*.log
+*.tgz
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+.venv/ # Virtual environment directory
+env/ # Common alternative for virtual environment directory
+venv/ # Common alternative for virtual environment directory
+.Python # macOS specific
+pip-log.txt
+.coverage
+.pytest_cache/
+htmlcov/
+.mypy_cache/
+
+# Operating System / Editor specific
+.DS_Store
+.vscode/
+.idea/
+*~
+# Backup files
+*.bak
+*.swp
