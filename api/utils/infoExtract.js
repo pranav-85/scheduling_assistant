@@ -1,8 +1,10 @@
 // import OpenAI from "openai";
-import MistralClient, { Mistral } from "@mistralai/mistralai";
+import { Mistral } from "@mistralai/mistralai";
 import { DateTime } from "luxon";
+
 import dotenv from 'dotenv';
 dotenv.config();
+
 // Initialize OpenAI client
 const client = new Mistral(
   process.env.MISTRAL_API_KEY, // your key

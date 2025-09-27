@@ -1,10 +1,9 @@
 // utils/infoOCR.js
 import { Mistral } from "@mistralai/mistralai";
-import fs from "fs";
 
 import dotenv from 'dotenv';
 dotenv.config();
-
+console.log("API Key Loaded?", process.env.MISTRAL_API_KEY ? "Yes ✅" : "No ❌");
 const client = new Mistral({ apiKey: process.env.MISTRAL_API_KEY });
 
 /**
