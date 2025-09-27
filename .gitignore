@@ -1,7 +1,7 @@
 # Node.js specific
 node_modules/
 npm-debug.log
-.env # Or any other environment variable files
+*.env # Or any other environment variable files
 build/
 dist/
 tmp/
