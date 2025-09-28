@@ -9,6 +9,9 @@ tmp/
 *.log
 *.tgz
 
+#Azure Creds
+appointment-sch-vm-1_key.pem
+
 # Python specific
 __pycache__/
 *.pyc
