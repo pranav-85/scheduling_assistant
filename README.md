@@ -4,9 +4,12 @@ An API service that parses appointment details using **Mistral AI OCR + LLM mode
 Built with **Node.js** and deployed via **Docker** on **Azure VM**.
 
 ---
+## Demo Video
+https://drive.google.com/file/d/1z93tvYEkx1bvGXRlAUOXA4tyaH95OcPL/view?usp=sharing
+
 
 ## Architecture
-![alt text](./imgs/architecture.png)
+![architecture image](./imgs/architecture.png)
 
 ---
 
@@ -60,7 +63,7 @@ Built with **Node.js** and deployed via **Docker** on **Azure VM**.
 1. Clone repo:
 
    ```bash
-   git clone https://github.com/your-username/appointment-scheduler.git
+   git clone https://github.com/pranav-85/scheduling_assistant.git
    cd appointment-scheduler/api
    ```
 2. Install dependencies:
@@ -116,7 +119,7 @@ Built with **Node.js** and deployed via **Docker** on **Azure VM**.
 2. Copy your project files (or pull from GitHub):
 
    ```bash
-   git clone https://github.com/your-username/appointment-scheduler.git
+   git clone https://github.com/pranav-85/scheduling_assistant.git
    ```
 3. Build and run with Docker:
 
