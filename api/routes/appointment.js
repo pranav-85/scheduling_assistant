@@ -30,12 +30,8 @@ router.post("/parse", upload.single("image"), async (req, res) => {
       return res.status(400).json({ error: "No text or image provided" });
     }
 
-    // Step 1: Extract entities
     const entitiesJson = await extractEntities(textInput);
 
-    // Step 2: Normalize entities
-
-    // Step 3: Guardrail check
     const missingEntities = getMissingFields(entitiesJson.entities || {}, [
       "date_phrase",
       "time_phrase",
@@ -59,6 +55,8 @@ router.post("/parse", upload.single("image"), async (req, res) => {
       "time",
       "tz",
     ]);
+
+    console.log("Missing normalized fields:", missingNormalized);
 
     if (missingNormalized.length > 0) {
       return res.json({
