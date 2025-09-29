@@ -65,7 +65,6 @@ router.post("/parse", upload.single("image"), async (req, res) => {
       });
     }
 
-    // Step 4: Combine into final JSON
     const finalJson = combineAppointmentJson(entitiesJson, normalizedJson);
     res.json(finalJson);
 
